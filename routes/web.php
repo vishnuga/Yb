@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\Frontendcontroller;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\UserController;
 
 
 
@@ -34,15 +36,29 @@ Route::get('/admin',[Frontendcontroller::class, 'admin']);
 Route::post('/waitfortheacceptance',[Frontendcontroller::class, 'wfa']);
 Route::get('/waitfortheacceptance',[Frontendcontroller::class, 'wfa']);
 
-Route::get('/admin/academic',[AdminController::class, 'aaca']);
-Route::get('/admin/industrial',[AdminController::class, 'aind']);
-Route::get('/admin/student',[AdminController::class, 'astu']);
+Route::get('/aacademic',[AdminController::class, 'aaca']);
+Route::get('/aindustrial',[AdminController::class, 'aind']);
+Route::get('/astudent',[AdminController::class, 'astu']);
 
-Route::get('/',[LoginController::class,'index']);
+Route::get('/x',[LoginController::class,'index']);
 Route::post('/checklogin',[LoginController::class,'checklogin']);
 Route::get('/success',[LoginController::class,'successlogin']);
 Route::get('/logout',[LoginController::class,'logout']);
- 
+
+Route::resource('/users', UserController::class);
+
+Route::get('/inl',[UserController::class, 'indexl']);
+
+Route::get('/welcome', function () {
+    return view('a');
+});
+
+Route::get('/urpd',[UserController::class,'index']);
+Route::get('/create',[UserController::class,'create']);
+Route::post('/store',[UserController::class,'store']);
+Route::get('/edit/{id}',[UserController::class,'edit'])->name('edit');
+Route::patch('/update/{id}',[UserController::class,'update'])->name('update');
+Route::delete('/delete/{id}',[UserController::class,'destroy'])->name('delete');
 
 
 

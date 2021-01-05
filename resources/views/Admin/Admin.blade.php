@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Computer Science</title>
+    <title>Y-Bridge Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
      <meta name="_token" content="nsZZRkbhIrpMBUQEt7jkULnMpSc7Tiyp3I5Z9oWb"/>
@@ -35,7 +35,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 <div class="nav-side-menu">
-    <div class="brand">Computer Science</div>
+    <div class="brand">Y-Bridge Admin</div>
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
         <div class="menu-list">
@@ -47,15 +47,15 @@
                   <a href="admin"><i class="fa fa-dashboard fa-lg"></i>Dashboard</span></a>
                 </li>
                 <li class="collapsed ">
-                  <a href="admin/academic"><i class="fa fa-gift fa-lg"></i>Academic</a>
+                  <a href="aacademic"><i class="fa fa-gift fa-lg"></i>Academic</a>
                 </li>
 
                 <li class="collapsed ">
-                  <a href="admin/student"><i class="fa fa-gift fa-lg"></i>Student</a>
+                  <a href="astudent"><i class="fa fa-gift fa-lg"></i>Student</a>
                 </li>
 
                 <li class="collapsed ">
-                  <a href="admin/industrial"><i class="fa fa-gift fa-lg"></i>Industrial</a>
+                  <a href="aindustrial"><i class="fa fa-gift fa-lg"></i>Industrial</a>
                 </li>
 
                 <li class="collapsed ">
@@ -189,14 +189,15 @@ $(document).ready(function(){
    var table= $('#pending-table').DataTable({
         processing: true,
         serverSide: true,
-        ajax: 'http://192.248.56.20/match-module/members/pending-data',
+        ajax: '/',
         columns: [
-            {data: 'first_name', name: 'first_name'},
-            {data: 'last_name', name: 'last_name'},
+         
+           // {data: 'first_name', name: 'first_name'},
+           // {data: 'last_name', name: 'last_name'},
             {data: 'email', name: 'email'},
-            {data: 'gender', name: 'gender'},
-            {data: 'action', name: 'action',orderable:false,searchable:false},
-            {data: 'select', name: 'select',orderable:false,searchable:false},
+           // {data: 'gender', name: 'gender'},
+           // {data: 'action', name: 'action',orderable:false,searchable:false},
+           // {data: 'select', name: 'select',orderable:false,searchable:false},
 
         ],
          "scrollY": 500,
@@ -206,7 +207,7 @@ $(document).ready(function(){
            $('.SelectPermission').change(function(){
                     var Id = $(this).attr('id');
                     var type = $(this).val();
-                    var url = 'http://192.248.56.20/match-module/members/add-permission';
+                    var url = '/';
                     
                     //////////
                     swal({   

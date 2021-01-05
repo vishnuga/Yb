@@ -167,7 +167,7 @@ body{
            
                
                 
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -216,8 +216,8 @@ body{
 								<h1 class="homepage-three-title">Y-Bridge <span style="color: #ffff">DCS UOJ</h1>
 								<h2>A match-module to bridge students with Academic and Industry-based supervisors </h2>
 								<div class="slider-content-btn">
-									<li><a class="button btn btn-light btn-lg btn-lg" backdrop-filter: blur(8px); href="sg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SignUp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-									<a class="button btn btn-light btn-lg btn-sq" href="lgn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+									<li><a href="sg" class="btn btn-light btn-radius btn-brd grd1">SignUp</a>
+									<a href="lgn" class="btn btn-light btn-radius btn-brd grd1">Login</a></li>
 								</div>
 							</div>
 						</div>
@@ -233,8 +233,8 @@ body{
 								<h1 class="homepage-three-title">Y-Bridge <span style="color: #ffff">DCS UOJ</h1>
 								<h2>Department of Computer Science- <br>University of Jaffna</h2>
 								<div class="slider-content-btn">
-                                <li><a class="button btn btn-light btn-lg btn-lg" backdrop-filter: blur(8px); href="sg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SignUp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-									<a class="button btn btn-light btn-lg btn-sq" href="lgn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                                <li><a href="sg" class="btn btn-light btn-radius btn-brd grd1">SignUp</a>
+                                <a href="lgn" class="btn btn-light btn-radius btn-brd grd1">Login</a></li>
 								</div>
 							</div>
 						</div>
