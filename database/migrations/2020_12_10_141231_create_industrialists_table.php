@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateIndutrialistsTable extends Migration
+class CreateIndustrialistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateIndutrialistsTable extends Migration
      */
     public function up()
     {
-        Schema::create('indutrialists', function (Blueprint $table) {
+        Schema::create('industrialists', function (Blueprint $table) {
             
             $table->String('Photo');
             $table->String('CompanyPersonalEmailID')->unique();
@@ -34,6 +34,6 @@ class CreateIndutrialistsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('indutrialists');
+        Schema::dropIfExists('industrialists');
     }
 }

@@ -216,8 +216,8 @@ body{
 								<h1 class="homepage-three-title">Y-Bridge <span style="color: #ffff">DCS UOJ</h1>
 								<h2>A match-module to bridge students with Academic and Industry-based supervisors </h2>
 								<div class="slider-content-btn">
-									<li><a href="sg" class="btn btn-light btn-radius btn-brd grd1">SignUp</a>
-									<a href="lgn" class="btn btn-light btn-radius btn-brd grd1">Login</a></li>
+									<li><a href="register" class="btn btn-light btn-radius btn-brd grd1">SignUp</a>
+									<a href="login" class="btn btn-light btn-radius btn-brd grd1">Login</a></li>
 								</div>
 							</div>
 						</div>
